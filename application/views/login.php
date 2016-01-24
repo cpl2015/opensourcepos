@@ -3,6 +3,8 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" rev="stylesheet" href="<?php echo base_url();?>css/login.css" />
+	<link href="<?= base_url(); ?>templates/spacelab/css/bootstrap.css" rel="stylesheet">
+        <link href="<?= base_url(); ?>templates/spacelab/css/style.css" rel="stylesheet">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>Open Source Point Of Sale <?php echo $this->lang->line('login_login'); ?></title>
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>/images/favicon.ico">
@@ -41,7 +43,7 @@
 				'size'=>'20')); ?>
 			</div>
 			
-			<div id="submit_button"><?php echo form_submit('loginButton','Go'); ?> </div>
+			<div id="btn btn-block btn-success"><?php echo form_submit('loginButton','Go'); ?> </div>
 		</div>
 	</div>
 	<?php echo form_close(); ?><h1>Open Source Point Of Sale <?php echo $this->config->item('application_version'); ?></h1>
